@@ -1,17 +1,18 @@
-// #sidebar {
-//     width: 100px;
-//     position: fixed;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 16px;
-//     font-size: 12px;
-//     background-color: #f4f4f473;
+#sidebar {
+    width: 70px;
+    position: fixed;
+    height: 100%;
+    font-size: 12px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
 
-//     & a {
-//         font-size: 16px;
-//     }
-// }
+.social-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
 

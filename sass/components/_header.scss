@@ -1,0 +1,25 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #48AAFC;
+    align-items: center;
+}
+
+.shortcuts > a {
+    padding-right: 8px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+// .social-links > a {
+//     padding-right: 8px;
+//     font-size: 16px;
+// }
+
+#search {
+    margin-right: 8px;
+}
