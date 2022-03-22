@@ -1,0 +1,32 @@
+footer {
+    background-color: #031721;
+    color: whitesmoke;
+    .container {
+        padding: 20px;
+    }
+    .social-links {
+        margin-bottom: 8px;
+        a {
+            color: whitesmoke;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .row {
+        align-items: baseline;
+    }
+    .explore > ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    h2, h3, h4 {
+        color: #FBC558;
+    }
+}
