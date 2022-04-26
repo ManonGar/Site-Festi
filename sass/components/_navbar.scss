@@ -1,7 +1,11 @@
 #navbar {
-    align-items: baseline;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    background-color: #48AAFC;
+    color: whitesmoke;
+    z-index: 1000;
+    position: fixed;
+    a {
+        color: white;
+    }
 }
 
 .row {
@@ -30,12 +34,12 @@
 }
 
 .nav-link {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     padding-right: 0;
     padding-left: 24px;
 
     &:hover, .nav-link:focus  {
-        color: black;
+        color: whitesmoke;
     }
 }
