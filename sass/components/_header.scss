@@ -55,12 +55,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 24px;
-    }
+#shortcuts {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .fa-magnifying-glass {
@@ -70,7 +70,6 @@
 #nav-elements {
     list-style-type: none;
     display: flex;
-    gap: 24px;
     border: 1px solid;
     padding: 16px;
     border-radius: 28px;
@@ -79,6 +78,11 @@
         background-color: #F5C555;
         padding: 14px 10px;
         border-radius: 20px;
+    }
+
+    a {
+        background-color: transparent;
+        padding: 14px 10px; 
     }
 }
 
