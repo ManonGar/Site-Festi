@@ -1,33 +1,30 @@
-let buttons = document.querySelectorAll(".btn-overlay");
-let overlay = document.querySelector(".overlay");
-let closeBtn = document.getElementById("closeNav");
+$('#nav-principal .liencat').on('click', function() {
+    var str = $(this).attr('id');
+    var id = str.slice(3,10);
 
-buttons.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-       e.target.nextElementSibling.classList.toggle("show");
-    })
+    $('#nav-secondaire ul').hide();
+    $('#account').hide();
+
+    $('#closeBtn').fadeIn();
+   
+    $('#nav-secondaire #souscat' + id).fadeIn();
+   
+    $('#nav-secondaire .overlay').addClass('show');
+    // $('.overlay').addClass('show');
+
+    $('#nav-principal li.active').removeClass('active');
+    $(this).parent().addClass('active');
+     
 });
 
-// closeBtn.addEventListener('click', () => {
-//     nav.style.width = "0%";
-// }) 
+$('#closeBtn').on('click', function() {
 
-// btn.on('click', function() {
-//     nav.css("width", "100%");
-// });
+    $('#nav-secondaire .overlay').removeClass('show', 1000);
+   
+});
 
-// closeBtn.on('click', function() {
-//     nav.css("width", "0%");
-// });
-  
-//   $('#closeNav').on('click', function() {
-//     $('#myNav').css("width", "0%");
-//   });
 
-//   $('#btn-overlay').on('click', function() {
-//     $('#nav').css("width", "100%");
-//   });
-  
-//   $('#closeNav').on('click', function() {
-//     $('#nav').css("width", "0%");
-//   });
+
+
+
+

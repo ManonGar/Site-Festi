@@ -51,58 +51,47 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.modal {
-    background: black;
-    top: 61px;
-}
-
-#menu > ul {
-    list-style-type: none;
+#nav-principal {
     display: flex;
-    justify-content: end;
-    gap: 24px;
-}
+    justify-content: space-between;
+    align-items: center;
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #031721;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transform: translateY(-100%);
-    transition: all 0.5s;
-    padding: 100px 0;
-    z-index: -1;
     ul {
         list-style-type: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        gap: 24px;
     }
-  }
+}
+
+.fa-magnifying-glass {
+    font-size: 16px;
+}
+
+#nav-elements {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    border: 1px solid;
+    padding: 16px;
+    border-radius: 28px;
+    
+    a:hover {
+        background-color: #F5C555;
+        padding: 14px 10px;
+        border-radius: 20px;
+    }
+}
+
+// #account {
+//     border: 1px solid;
+//     padding: 16px;
+//     border-radius: 28px;
+// }
+
+// #shortcuts {
+//     display: flex;
+//     align-items: center;
+// }
 
 
-  .overlay.show {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
-//   .overlay #closeNav {
-//     position: absolute;
-//     top: 20px;
-//     right: 45px;
-//     font-size: 60px;
-//   }
-
-  .btn-overlay:hover{
-    border-bottom: 1px solid #FBC558;
-    padding-bottom: 5px;
-  }
-
-  .btn-overlay.active {
-    border: 1px solid #FBC558;
-    padding: 5px;
-  }
   

@@ -1,8 +1,8 @@
 #navbar {
-    background-color: #48AAFC;
+    background: linear-gradient(180deg, #51a5eb, transparent);
     color: whitesmoke;
     z-index: 1000;
-    position: fixed;
+    
     a {
         color: white;
     }
@@ -42,4 +42,11 @@
     &:hover, .nav-link:focus  {
         color: whitesmoke;
     }
+}
+
+#menu {
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
 }

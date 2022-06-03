@@ -30,6 +30,7 @@
 @import "./components/sidebar";
 @import "./components/header";
 @import "./components/navbar";
+@import "./components/overlay";
 
 // 6. Add additional custom code here
 
@@ -39,7 +40,7 @@ body {
 }
 
 .container-fluid {
- padding: 20px 150px;
+ padding: 20px 160px;
 }
 
 a {
@@ -47,7 +48,7 @@ a {
     text-decoration: none; 
 }
 
-// .container {
-//    padding: 20px 100px;
-// }
+.container {
+   padding: 32px 0;
+}
 

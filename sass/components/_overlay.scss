@@ -1,0 +1,37 @@
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #031721;
+    overflow-y: auto;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.overlay.show {
+    transform: translateY(0%);
+    // transition: all 0.5s;
+}
+
+#nav-secondaire ul {
+    display: none;
+    list-style-type: none;
+    margin-top: 64px;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    line-height: 58px;
+}
+
+#nav-secondaire li.souspage {
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#closeBtn {
+    display: none;
+}
