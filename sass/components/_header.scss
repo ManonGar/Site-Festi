@@ -84,7 +84,14 @@
         background-color: transparent;
         padding: 14px 10px; 
     }
+    
+    a.active {
+        background-color: #F5C555;
+        padding: 14px 10px;
+        border-radius: 20px;
+    }
 }
+
 
 // #account {
 //     border: 1px solid;

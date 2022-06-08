@@ -8,12 +8,14 @@ $('#nav-principal .liencat').on('click', function() {
     // $('#closeBtn').fadeIn();
    
     $('#nav-secondaire #souscat' + id).fadeIn();
+    $('#nav-secondaire .not-overlay').fadeIn();
+
    
     $('#nav-secondaire .overlay').addClass('show');
     // $('.overlay').addClass('show');
 
-    $('#nav-principal li.active').removeClass('active');
-    $(this).parent().addClass('active');
+    $('#nav-principal a.active').removeClass('active');
+    $(this).addClass('active');
      
 });
 
@@ -25,12 +27,20 @@ $('#nav-principal .liencat').on('click', function() {
 
 
 $('.not-overlay').on('click', function(e) {
-
     $('#nav-secondaire .overlay').removeClass('show', 1000);
     $('#nav-secondaire ul').hide();
-
+    $('#nav-secondaire .not-overlay').hide();
+    $('#nav-principal a.active').removeClass('active');
 });
 
+$('.liensouscat').on('mouseover', function() { 
+    $(this).next().fadeIn(1000);
+    $(this).append(' ').append($("<i></i>").addClass("fa-solid fa-arrow-right")); 
+});
+
+$('.liensouscat').on('mouseleave', function() {
+    $('svg').hide();
+});
 
 
 
