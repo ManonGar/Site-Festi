@@ -39,7 +39,7 @@ $('.liensouscat').on('mouseover', function() {
 });
 
 $('.liensouscat').on('mouseleave', function() {
-    $('svg').hide();
+    $('.liensouscat svg').hide();
 });
 
 
