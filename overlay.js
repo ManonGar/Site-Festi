@@ -3,9 +3,9 @@ $('#nav-principal .liencat').on('click', function() {
     var id = str.slice(3,10);
 
     $('#nav-secondaire ul').hide();
-    $('#account').hide();
+    // $('#account').hide();
 
-    $('#closeBtn').fadeIn();
+    // $('#closeBtn').fadeIn();
    
     $('#nav-secondaire #souscat' + id).fadeIn();
    
@@ -17,11 +17,23 @@ $('#nav-principal .liencat').on('click', function() {
      
 });
 
-$('#closeBtn').on('click', function() {
+// $('#closeBtn').on('click', function() {
+
+//     $('#nav-secondaire .overlay').removeClass('show', 1000);
+   
+// });
+
+
+$('.not-overlay').on('click', function(e) {
 
     $('#nav-secondaire .overlay').removeClass('show', 1000);
-   
+    $('#nav-secondaire ul').hide();
+
 });
+
+
+
+
 
 
 
