@@ -1,50 +1,68 @@
 .overlay {
     position: fixed;
-    height: 100vh;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #031721;
-    overflow-y: auto;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 0.5s;
     z-index: -1;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .overlay.show {
-    transform: translateX(0%);
+    transform: translateX(50%);
     // transition: all 0.5s;
 }
 
-#nav-secondaire ul {
+#nav-secondaire {
+    margin-left: 730px;
+    margin-top: 88px;
+    // ul {
+    // display: none;
+    // margin-top: 64px;
+    // line-height: 40px;
+    // position: absolute;
+    // right: 25%;
+    // }
+
+    a {
+        color: whitesmoke;
+    }
+}
+
+.souscat {
     display: none;
-    list-style-type: none;
-    margin-top: 64px;
-    font-size: 22px;
     line-height: 40px;
+    // position: absolute;
+    // right: 390px;
+    // top: 190px;
 }
 
 #nav-secondaire .sousliste {
     margin-top: 0;
     padding-left: 24px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     display: none;
 }
 
-#closeBtn {
-    display: none;
-}
+// #closeBtn {
+//     display: none;
+// }
 
 .not-overlay {
     position: fixed;
-    height: 100vh;
-    width: 25%;
+    height: 100%;
+    width: 50%;
     top: 0;
-    right: 0;
+    left: 0;
     cursor: pointer;
     display: none;
-    opacity: 0;
-    background: rgba(0,0,0,0.5);
+    // background: rgba(0,0,0,0.5);
+}
+
+.liensouscat {
+    color: whitesmoke;
 }

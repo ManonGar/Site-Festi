@@ -1,48 +1,18 @@
 #navbar {
-    background: linear-gradient(180deg, #51a5eb, transparent);
+    // background: linear-gradient(180deg, #51a5eb, transparent);
     color: whitesmoke;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     a {
-        color: white;
-    }
-}
-
-.row {
-    --bs-gutter-x: 0;
-}
-
-.dropdown-menu {
-    min-width: 12rem;
-    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-    border: none;
-    font-weight: 100;
-    font-size: 13px;
-    font-weight: 300;
-    background-color: #48AAFC;
-    padding-right: 2px;
-    left: -60px;
-}
-
-.dropdown:hover {
-    cursor: pointer;
-
-    .dropdown-menu {
-        display: block;
-        margin: 0;
-    }
-}
-
-.nav-link {
-    color: whitesmoke;
-    text-decoration: none;
-    padding-right: 0;
-    padding-left: 24px;
-
-    &:hover, .nav-link:focus  {
         color: whitesmoke;
     }
 }
+
+// .row {
+//     --bs-gutter-x: 0;
+// }
 
 #menu {
     right: 0;
